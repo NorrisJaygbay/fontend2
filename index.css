@@ -1,0 +1,220 @@
+#body{
+    background: rgba(0,0,139,.8);
+}
+.control{
+    /* border: 8px solid black; */
+    width: 35%;
+    /* height: 500px; */
+    /* margin-left: 450px; */
+    margin: auto;
+    margin-top: 80px;
+    /* background: rgba(25,25,112,1); */
+    border-radius: 15px;
+}
+.control1{
+    background: rgba(25,25,112,1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+.control2{
+    background: rgba(25,25,112,1);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#controltheme{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    font-family: sans-serif;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+#label1{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+}
+#label2{
+    color: rgba(255,255,255,.5);
+    font-size: 10px;
+    margin-right: 15px;
+    /* font-weight: bold; */
+}
+#controltheme1{
+    display: flex;
+    align-items: center;
+}
+#bone, #btwo, #bthree{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(255,255,255,.5);
+    outline: none;
+    border-radius: 50%;
+    margin-left: 3px;
+    cursor: pointer;
+}
+#bone{
+    background: black;
+}
+#btwo{
+    background: blue;
+}
+#bthree{
+    background: rgba(25,25,112,1);
+}
+input[type=text]{
+    width: 93%;
+    height: 60px;
+    color: whitesmoke;
+    /* margin: auto; */
+    margin-left: 6px;
+    padding: 8px;
+    /* margin-top: 10px; */
+    font-size: 50px;
+    border: none;
+    outline: none;
+    background:transparent;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    text-align: end;
+    cursor: none;
+}
+input[placeholder]{
+    /* text-align: center; */
+}
+::-webkit-input-placeholder{
+    color: whitesmoke;
+}
+input[type=button]{
+    min-width: 20%;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    background:whitesmoke;
+    border: none;
+    outline: none;
+    /* border: 2px solid black; */
+    box-shadow:2px 2px 2px whitesmoke;
+    border-radius: 10px;
+    font-weight: 900;
+    color: rgba(0,0,0,1);
+    cursor: pointer;
+    /* font-style: italic; */
+    /* text-shadow: 4px 4px 4px pink; */
+}
+/* input[type=button]:hover{
+    color:black;
+    font-size: 60px;
+    background: lightgreen;
+} */
+#can{
+    width: 44%;
+    /* background: linear-gradient(to right, rgba(0,0,139,.5),rgba(0, 72, 139, 0.9),rgba(0, 0, 139, 0.74)); */
+    background: linear-gradient(to right, rgba(255,0,0,.3),rgba(255,0,0,.9),rgba(255,0,0,.3));
+
+    color: whitesmoke;
+}
+#dele{
+    background: linear-gradient(to right, rgba(255,0,0,.3),rgba(255,0,0,.9),rgba(255,0,0,.3));
+    color: whitesmoke;
+}
+#equal{
+    width: 44%;
+    background: linear-gradient(to right, rgba(0,128,0,.3),rgba(0,128,0,.9),rgba(0,128,0,.3));
+    color: whitesmoke;
+}
+@media all and (max-width:1200px){
+    .control{
+        width: 40%;
+    }
+}
+@media all and (max-width:1060px){
+    .control{
+        width: 48%;
+    }
+}
+@media all and (max-width:900px){
+    .control{
+        width: 50%;
+    }
+}
+@media all and (max-width:850px){
+    .control{
+        width: 58%;
+    }
+}
+@media all and (max-width:750px){
+    .control{
+        width: 65%;
+    }
+}
+@media all and (max-width:650px){
+    .control{
+        width: 75%;
+    }
+}
+@media all and (max-width:570px){
+    .control{
+        width: 80%;
+    }
+}
+@media all and (max-width:550px){
+    .control{
+        width: 85%;
+    }
+}
+@media all and (max-width:500px){
+    .control{
+        width: 72%;
+    }
+    input[type=button]{
+        min-width: 18%;
+        height: 60px;
+        margin-top: 15px;
+        margin-left: 15px;
+        font-size: 1.2rem;
+    }
+    input[type=text]{
+        width: 88%;
+        height: 60px;
+    }
+    #can, #equal{
+        width: 42%;
+    }
+    #dele{
+        font-size: 1.1rem;
+    }
+}
+@media all and (max-width:450px){
+    .control{
+        width: 75%;
+    }
+}
+@media all and (max-width:430px){
+    .control{
+        width: 80%;
+    }
+}
+@media all and (max-width:400px){
+    .control{
+        width: 85%;
+    }
+}
+@media all and (max-width:380px){
+    .control{
+        width: 90%;
+    }
+}
+@media all and (max-width:360px){
+    .control{
+        width: 95%;
+    }
+}
+@media all and (max-width:340px){
+    .control{
+        width: 100%;
+    }
+}
+    
