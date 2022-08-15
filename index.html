@@ -21,7 +21,7 @@
     Coded by <a href="#">Norris Jaygbay</a>.
   </div>
   <div class="control">
-      <div id="controltheme">
+      <!-- <div id="controltheme">
         <label id="label1">calc</label>
         <div id="controltheme1">
           <label id="label2">THEME</label>
@@ -29,6 +29,22 @@
           <button id="btwo"></button>
           <button id="bthree"></button>
         </div>
+      </div> -->
+      <div id="cal0">
+          <div id="cal1">
+              <p id="p10">1</p>
+              <p id="p11">2</p>
+              <p id="p12">3</p>
+          </div>
+          <div id="cal2">
+              <p id="p2">calc</p>
+              <div id="cal3">
+                  <p id="p1">THEME</p>
+                  <div id="radio1">
+                      <div id="radio2"></div>
+                  </div>
+              </div>
+          </div>
       </div>
       <form name="calculator">
         <div class="control1">
@@ -64,21 +80,29 @@
       function del(){
           calculator.answer.value=calculator.answer.value.slice(0,-1);
       }
-      document.getElementById('bone').addEventListener("click", function(){
-        document.querySelector('.control1').style.background="black";
-        document.querySelector('.control2').style.background="black";
+      document.getElementById('p10').addEventListener("click",function(){
+            document.querySelector('.control1').style.background="hsl(6, 63%, 50%)";
+            document.querySelector('.control2').style.background="hsl(6, 63%, 50%)";
+            document.getElementById('radio1').style.justifyContent="start";
+            document.getElementById('radio2').style.background="hsl(6, 63%, 50%)";
+            document.getElementById('body').style.background="hsl(225, 21%, 49%)";
+        })
+        document.getElementById('p11').addEventListener("click",function(){
+            document.querySelector('.control1').style.background="hsl(224, 36%, 15%)";
+            document.querySelector('.control2').style.background="hsl(224, 36%, 15%)";
+            document.getElementById('radio1').style.justifyContent="center";
+            document.getElementById('radio2').style.background="hsl(224, 36%, 15%)";
+            document.getElementById('body').style.background="hsl(225, 21%, 49%)";
 
-      })
-      document.getElementById('btwo').addEventListener("click", function(){
-        document.querySelector('.control1').style.background="blue";
-        document.querySelector('.control2').style.background="blue";
+        })
+        document.getElementById('p12').addEventListener("click",function(){
+            document.querySelector('.control1').style.background="hsl(225, 21%, 49%)";
+            document.querySelector('.control2').style.background="hsl(225, 21%, 49%)";
+            document.getElementById('radio1').style.justifyContent="end";
+            document.getElementById('radio2').style.background="hsl(225, 21%, 49%)";
+            document.getElementById('body').style.background="hsl(224, 36%, 15%)";
 
-      })
-      document.getElementById('bthree').addEventListener("click", function(){
-        document.querySelector('.control1').style.background="rgba(25,25,112,1)";
-        document.querySelector('.control2').style.background="rgba(25,25,112,1)";
-
-      })
+        })
   </script>
 </body>
 </html>
